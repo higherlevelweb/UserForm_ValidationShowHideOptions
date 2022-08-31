@@ -1,4 +1,7 @@
 
+/* Scripts for User Form with Validation and Show/Hide Options */
+/* By Julian Nyte */
+
 //Event listenser for user form submission attempt
 let userForm = document.querySelector("form");
 userForm.addEventListener('submit', event => {

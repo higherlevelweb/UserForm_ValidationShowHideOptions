@@ -1,0 +1,89 @@
+/* CSS Styles for User Form with Validation and Show/Hide Options */
+/* By Julian Nyte */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+#userFormRegion {
+    width: 600px;
+    padding: 1.5em;
+    background: lightblue;
+}
+
+#userForm .userFormRow {
+    margin: 0 0 1em;
+}
+
+#userForm input,
+#userForm select,
+#userForm .button {
+    border-radius: 2px;
+    border: 1px solid #767676;
+}
+
+#userForm input:hover,
+#userForm select:hover {
+    border-radius: 2px;
+    border: 1px solid #006400;
+}
+
+#userForm input {
+    height: 2em;
+}
+
+#userForm select {
+    padding: 0.4em;
+}
+
+#userForm .button {
+    height: 2.2em;
+    padding: 0.4em 0.6em;
+    margin-right: 2px;
+}
+
+#userForm .button:hover {
+    background-color: #90ee90;
+    border: 1px solid #767676;
+    cursor: pointer;
+}
+
+#userForm .reset:hover {
+    background-color: orange;
+}
+
+#userFormRegion h3 {
+    margin: 0.9em 0 1.5em;
+}
+
+#userForm .userFormRow input,
+.userFormRow select {
+    margin: 5px 0;
+}
+
+#userForm #servicesAddtionalOptions,
+#userFormSubmitted {
+    display: none;
+}
+
+.required {
+    color: #e60404;
+    position: relative;
+    top: 2px;
+    margin-right: 4px;
+}
+
+.formErrorMsg,
+.formRequiredMsg {
+    font-size: 0.8em;
+    color: #e60404;
+}
+
+.formRequiredMsg {
+    margin: 1.5em 0;
+}
+
+.button {
+    margin: 1em 0;
+}

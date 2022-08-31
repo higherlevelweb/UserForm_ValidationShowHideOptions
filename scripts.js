@@ -1,4 +1,3 @@
-
 /* Scripts for User Form with Validation and Show/Hide Options */
 /* By Julian Nyte */
 

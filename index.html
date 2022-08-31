@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Form Validation">
+    <meta name="author" content="Julian Nyte">
+    <meta name="description" content="User form demo in HTML, CSS, and JavaScript, with validation and show/hide options.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Form in HTML, CSS, and JavaScript with Validation and Show/Hide Options</title>
+</head>
+
+<body>
+
+    <h2>User Form with Validation and Show/Hide Options</h2>
+    <div id="userFormRegion" class="userFormRegion">
+        <h3>Please submit the following details:</h3>
+        <form id="userForm" class="userForm" name="userForm" method="post" action="#">
+            <div class="userFormRow">
+                <label for="fname"><span class="required">*</span>First name (or single name if you do not have a last
+                    name):</label><br>
+                <input type="text" id="fname" name="fname" value="" size="50">
+                <div id="fname-Error" class="formErrorMsg"></div>
+            </div>
+            <div class="userFormRow">
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" value="" size="20">
+            </div>
+            <div class="userFormRow">
+                <label for="services"><span class="required">*</span>What services are your looking for?:</label><br />
+                <select id="services" name="services">
+                    <option value="0">Select Option</option>
+                    <option value="1">-------------</option>
+                    <option value="2">Health Care</option>
+                    <option value="3">Education</option>
+                    <option value="4">Business</option>
+                    <option value="5">Licensing</option>
+                    <option value="6">Financial</option>
+                    <option value="7">Other</option>
+                </select>
+                <div id="services-Error" class="formErrorMsg"></div>
+            </div>
+            <div id="servicesAddtionalOptions" class="userFormRow">
+                <label for="servicesAddtionalOption"><span class="required">*</span>In what region are you looking for
+                    these services:</label><br />
+                <select id="servicesAddtionalOption" name="servicesAddtionalOption">
+                    <option value="0">Select Option</option>
+                    <option value="1">-------------</option>
+                    <option value="2">Northern</option>
+                    <option value="3">Central</option>
+                    <option value="4">Eastern</option>
+                    <option value="5">South-Western</option>
+                </select>
+                <div id="servicesAddtionalOption-Error" class="formErrorMsg"></div>
+            </div>
+            <div class="userFormRow">
+                <label for="province"><span class="required">*</span>What province do you live in:</label><br />
+                <select id="province" name="province">
+                    <option value="0">Select Option</option>
+                    <option value="1">-------------</option>
+                    <option value="2">Alberta</option>
+                    <option value="3">Ontario</option>
+                    <option value="4">New Brunswick</option>
+                </select>
+                <div id="province-Error" class="formErrorMsg"></div>
+            </div>
+            <input type="submit" value="Submit" class="button">
+            <input type="button" value="Reset form" class="button reset">
+            <div class="formRequiredMsg"><span class="required">*</span>Required feilds.</div>
+        </form>
+        <div id="userFormSubmitted" class="userFormSubmitted">
+            <p>Thank-you, your form has sucessfully been submitted.</p>
+        </div>
+    </div>
+</body>
+
+</html>
